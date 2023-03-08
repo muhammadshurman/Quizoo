@@ -73,11 +73,11 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
         } else {
             buttonSubmit?.text = "SUBMIT"
         }
-        // END
+
         progressBar?.progress =
-            mCurrentPosition // Setting the current progress in the progressbar using the position of question
+            mCurrentPosition //
         tvProgress?.text =
-            "$mCurrentPosition" + "/" + progressBar?.max // Setting up the progress text
+            "$mCurrentPosition" + "/" + progressBar?.max //
 
         tvQuestion?.text = question.question
         ivImage?.setImageResource(question.image)
